@@ -4,7 +4,9 @@ const User=()=>{
     const [value,setvalue]=useState({});
      const formData=(e)=>{
       e.preventDefault();
-      console.log({value});
+      console.log({ name: value.Name,
+        email: value.Email,
+        password: value.Password});
      }
      const handleData=(e)=>{
         setvalue({
